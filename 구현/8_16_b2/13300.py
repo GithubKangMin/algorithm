@@ -19,3 +19,4 @@ for i in range(1,7):
             else:
                 result += (ldic[i*10+j] // k)  + 1
 print(result)
+
