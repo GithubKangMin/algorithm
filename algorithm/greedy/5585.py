@@ -7,3 +7,9 @@ change = 1000 - price
 result = 0
 
 # 거스름돈을 잔돈 개수가 최소화되도록 정의
+for i in [500,100,50,10,5,1]:
+    result += change//i # 순서가 틀려서 아예 틀린 값이 나옴 먼저 결과 계산해야 변수가 안바뀌지
+    change -= (change//i) * i # 나머지를 이용하면 쉽게 쓸 수 있음 %
+
+
+print(result)
