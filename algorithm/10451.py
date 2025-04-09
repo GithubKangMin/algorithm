@@ -1,5 +1,5 @@
 # 순열 사이클
-# 그래프 탐색
+# 그래프 탐색 dfs
 def count_cycles(N,permutation):
     visited = [False] * (N+1)
     count = 0
