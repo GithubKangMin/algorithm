@@ -1,10 +1,11 @@
-N, M = map(int, input().split())
-words = []
+import sys
 
+N, M = map(int, sys.stdin.readline().split())
+words = []
 
 # 리스트로 받기
 for _ in range(N):
-    words.append(input().strip())
+    words.append(sys.stdin.readline().rstrip())
 
 # 빈도수 세기(딕셔너리)
 freq= {}
@@ -26,5 +27,4 @@ def custom_sort(word):
 
 candidates.sort(key = custom_sort)
 
-for word in candidates:
-    print(word)
+sys.stdout.write('\n'.join(candidates))
